@@ -1,0 +1,53 @@
+<!--Add input validation using pattern attribute-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form with Validation</title>
+</head>
+<body>
+
+    <h2>Registration Form</h2>
+
+    <form action="#" method="post">
+        
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname" required  title="Only letters, 2 to 15 characters"><br><br>
+
+        
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname" required  title="Only letters, 2 to 15 characters"><br><br>
+
+        <!-- Email: Standard email pattern --><label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required
+               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+               title="Enter a valid email (e.g., name@mail.com)"><br><br>
+
+        
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required
+               pattern="[0-9]{10}" title="Enter 10-digit phone number"><br><br>
+
+        
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required
+               pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=]).{8,}"
+               title="Min 8 characters with uppercase, lowercase, digit, and special character"><br><br>
+
+        
+        <input type="submit" value="Register">
+    </form>
+
+</body>
+</html>
+
+</body>
+</html>
